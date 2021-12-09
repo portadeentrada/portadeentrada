@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="shortcut icon" href="../assets/img/Icone_App.png">
+    <script src="../../backend/js/lib/jquery-3.5.1.min.js"></script>
+    <script>
+        senhadig = prompt("Digite a senha", "")
+        if (senha != senhadig) {
+        alert('Acesso negado!')
+        top.location.href = '../../index.html';
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <form id="post-form">
+                    <h3 style="text-align: center;">Fazer Post</h3>
+                    <center><img src="../assets/img/Icone_App.png" width="100px" id="img-logo"></center>
+                    <br>
+                    <textarea id="title" class="form-control" placeholder="Digite aqui seu titulo..." rows="1"
+                        style="height: 40px;"></textarea>
+                    <br>
+                    <textarea id="post" class="form-control" placeholder="Digite aqui seu texto..."></textarea>
+                    <br>
+                    <textarea id="name" class="form-control" placeholder="Digite aqui seu Nome..." rows="1" style="height: 40px;"></textarea>
+                    <br>
+                    <input type="file" class="form-control" id="image" accept="images/*">
+                    <br>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success" onclick="upload()">Upload</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+
+    <script>
+        const firebaseConfig = {
+
+            apiKey: "AIzaSyAjH45PlV_ey621eIV3Xs3dGzHY9A7evpQ",
+            authDomain: "login-tcc-project.firebaseapp.com",
+            databaseURL: "https://login-tcc-project-default-rtdb.firebaseio.com",
+            projectId: "login-tcc-project",
+            storageBucket: "login-tcc-project.appspot.com",
+            messagingSenderId: "101153296472",
+            appId: "1:101153296472:web:a73cb05be4595b91beba2d"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="../../backend/js/adminpanel.js"></script>
+
+</body>
+
+</html>

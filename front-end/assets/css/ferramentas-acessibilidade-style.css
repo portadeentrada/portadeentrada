@@ -1,0 +1,71 @@
+/*:root*/
+
+:root {
+    --bgcolor: #F3F3F3;
+    --menucolor: #c1c1c1;
+    --menucolortransparent: #ececec;
+    --acessivelcolor: #ffea00;
+    --preto: #000;
+    --branco: #fff;
+}
+
+/*Logo Onu*/
+
+.logo__onu{
+    display: flex;
+    justify-content: center;
+    background-color: var(--menucolortransparent);
+}
+
+#logo-onu{
+    width: 110px;
+    background-color: var(--menucolortransparent);
+    margin-bottom: 30px;
+}
+
+/*Aumentar Fonte*/
+
+.btnstyle{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    background-color: var(--menucolortransparent);
+    font-size: 17px;
+}
+
+.diminuirFonte{
+    margin: 0px;
+}
+
+.fonts-mode{
+    background-color: var(--menucolortransparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Apps PC*/
+
+.apps-list{
+    background-color: var(--menucolortransparent);
+    display: block;
+    width: 400px;
+    margin-left: 30px;
+}
+
+#link-apps{
+    background-color: var(--menucolortransparent);
+    text-decoration: none;
+    text-align: left;
+    font-size: 13px;
+    color: #018383;
+}
+
+#link-apps-li{
+    background-color: var(--menucolortransparent);
+    margin-bottom: 20px;
+    width: 300px;
+}

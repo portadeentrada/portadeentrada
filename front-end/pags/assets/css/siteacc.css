@@ -1,0 +1,16 @@
+.text-intro{
+    text-align: center;
+    width: 800px;
+    height: 100px;
+}
+
+.container-text{
+    display: grid;
+    place-items: center;
+}
+
+.container-links{
+    display: grid;
+    place-items: center;
+    width: 800px;
+}
